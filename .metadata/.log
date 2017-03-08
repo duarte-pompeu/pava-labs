@@ -1,0 +1,586 @@
+!SESSION 2017-03-08 10:09:08.814 -----------------------------------------------
+eclipse.buildId=4.6.1.M20160907-1200
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pt_PT
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+This is a continuation of log file /afs/ist.utl.pt/users/0/8/ist173008/Cadeiras/PAva/git/.metadata/.bak_4.log
+Created Time: 2017-03-08 11:02:29.783
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 2 2017-03-08 11:02:29.790
+!MESSAGE An error occurred while accessing the type hierarchy of type ‘class NTSidDomainPrincipal [in NTSidDomainPrincipal.class [in com.sun.security.auth [in /usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/rt.jar]]]’.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:786)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:409)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:358)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:345)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:321)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:312)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2017-03-08 11:02:29.790
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 2 2017-03-08 11:02:29.806
+!MESSAGE An error occurred while accessing the type hierarchy of type ‘class NTSidGroupPrincipal [in NTSidGroupPrincipal.class [in com.sun.security.auth [in /usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/rt.jar]]]’.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:786)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:409)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:358)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:345)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:321)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:312)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2017-03-08 11:02:29.806
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 2 2017-03-08 11:02:29.830
+!MESSAGE An error occurred while accessing the type hierarchy of type ‘class NTSidPrimaryGroupPrincipal [in NTSidPrimaryGroupPrincipal.class [in com.sun.security.auth [in /usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/rt.jar]]]’.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:786)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:409)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:358)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:345)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:321)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:312)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2017-03-08 11:02:29.830
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 2 2017-03-08 11:02:29.858
+!MESSAGE An error occurred while accessing the type hierarchy of type ‘class NTSidUserPrincipal [in NTSidUserPrincipal.class [in com.sun.security.auth [in /usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/rt.jar]]]’.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:786)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:409)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:358)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:345)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:321)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:312)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2017-03-08 11:02:29.858
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 2 2017-03-08 11:02:29.892
+!MESSAGE An error occurred while accessing the type hierarchy of type ‘class NTUserPrincipal [in NTUserPrincipal.class [in com.sun.security.auth [in /usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/rt.jar]]]’.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:786)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:409)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:358)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:345)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:321)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:312)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2017-03-08 11:02:29.892
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 2 2017-03-08 11:02:29.930
+!MESSAGE An error occurred while accessing the type hierarchy of type ‘class PolicyFile [in PolicyFile.class [in com.sun.security.auth [in /usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/rt.jar]]]’.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:786)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:409)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:358)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:345)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:321)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:312)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2017-03-08 11:02:29.930
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 2 2017-03-08 11:02:29.948
+!MESSAGE An error occurred while accessing the type hierarchy of type ‘interface PrincipalComparator [in PrincipalComparator.class [in com.sun.security.auth [in /usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/rt.jar]]]’.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:786)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:409)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:358)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:345)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:321)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:312)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2017-03-08 11:02:29.948
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 2 2017-03-08 11:02:29.955
+!MESSAGE An error occurred while accessing the type hierarchy of type ‘class <anonymous> [in SolarisNumericGroupPrincipal$1.class [in com.sun.security.auth [in /usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/rt.jar]]]’.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:786)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:409)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:358)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:345)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:321)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:312)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2017-03-08 11:02:29.955
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 2 2017-03-08 11:02:29.975
+!MESSAGE An error occurred while accessing the type hierarchy of type ‘class SolarisNumericGroupPrincipal [in SolarisNumericGroupPrincipal.class [in com.sun.security.auth [in /usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/rt.jar]]]’.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:786)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:409)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:358)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:345)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:321)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:312)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2017-03-08 11:02:29.975
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 2 2017-03-08 11:02:30.025
+!MESSAGE An error occurred while accessing the type hierarchy of type ‘class <anonymous> [in SolarisNumericUserPrincipal$1.class [in com.sun.security.auth [in /usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/rt.jar]]]’.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:786)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:409)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:358)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:345)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:321)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:312)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2017-03-08 11:02:30.025
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 2 2017-03-08 11:02:30.072
+!MESSAGE An error occurred while accessing the type hierarchy of type ‘class SolarisNumericUserPrincipal [in SolarisNumericUserPrincipal.class [in com.sun.security.auth [in /usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/rt.jar]]]’.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:786)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:409)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:358)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:345)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:321)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:312)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2017-03-08 11:02:30.072
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 2 2017-03-08 11:02:30.125
+!MESSAGE An error occurred while accessing the type hierarchy of type ‘class <anonymous> [in SolarisPrincipal$1.class [in com.sun.security.auth [in /usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/rt.jar]]]’.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:786)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:409)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:358)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:345)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:321)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:312)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2017-03-08 11:02:30.126
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 2 2017-03-08 11:02:30.141
+!MESSAGE An error occurred while accessing the type hierarchy of type ‘class SolarisPrincipal [in SolarisPrincipal.class [in com.sun.security.auth [in /usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/rt.jar]]]’.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:786)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:409)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:358)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:345)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:321)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:312)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2017-03-08 11:02:30.141
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 2 2017-03-08 11:02:30.173
+!MESSAGE An error occurred while accessing the type hierarchy of type ‘class UnixNumericGroupPrincipal [in UnixNumericGroupPrincipal.class [in com.sun.security.auth [in /usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/rt.jar]]]’.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:786)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:409)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:358)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:345)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:321)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:312)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2017-03-08 11:02:30.173
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 2 2017-03-08 11:02:30.192
+!MESSAGE An error occurred while accessing the type hierarchy of type ‘class UnixNumericUserPrincipal [in UnixNumericUserPrincipal.class [in com.sun.security.auth [in /usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/rt.jar]]]’.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:786)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:409)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:358)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:345)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:321)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:312)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2017-03-08 11:02:30.192
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 2 2017-03-08 11:02:30.208
+!MESSAGE An error occurred while accessing the type hierarchy of type ‘class UnixPrincipal [in UnixPrincipal.class [in com.sun.security.auth [in /usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/rt.jar]]]’.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:786)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:409)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:358)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:345)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:321)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:312)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2017-03-08 11:02:30.208
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 2 2017-03-08 11:02:30.231
+!MESSAGE An error occurred while accessing the type hierarchy of type ‘class UserPrincipal [in UserPrincipal.class [in com.sun.security.auth [in /usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/rt.jar]]]’.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:786)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:409)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:358)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:345)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:321)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:312)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2017-03-08 11:02:30.232
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 2 2017-03-08 11:02:30.250
+!MESSAGE An error occurred while accessing the type hierarchy of type ‘class <anonymous> [in X500Principal$1.class [in com.sun.security.auth [in /usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/rt.jar]]]’.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:786)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:409)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:358)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:345)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:321)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:312)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2017-03-08 11:02:30.250
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 2 2017-03-08 11:02:30.287
+!MESSAGE An error occurred while accessing the type hierarchy of type ‘class X500Principal [in X500Principal.class [in com.sun.security.auth [in /usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/rt.jar]]]’.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:786)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:409)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:358)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:345)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:321)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:312)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2017-03-08 11:02:30.287
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 2 2017-03-08 11:02:30.316
+!MESSAGE An error occurred while accessing the type hierarchy of type ‘interface package-info [in package-info.class [in com.sun.security.auth [in /usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/rt.jar]]]’.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:786)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:409)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:358)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:345)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:321)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:312)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2017-03-08 11:02:30.317
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 2 2017-03-08 11:02:30.333
+!MESSAGE An error occurred while accessing the type hierarchy of type ‘interface IORInfoExt [in IORInfoExt.class [in com.sun.corba.se.spi.legacy.interceptor [in /usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/rt.jar]]]’.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:786)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:409)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:358)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:345)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:321)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:312)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2017-03-08 11:02:30.333
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 2 2017-03-08 11:02:30.400
+!MESSAGE An error occurred while accessing the type hierarchy of type ‘interface ORBInitInfoExt [in ORBInitInfoExt.class [in com.sun.corba.se.spi.legacy.interceptor [in /usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/rt.jar]]]’.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:786)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:409)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:358)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:345)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:321)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:312)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2017-03-08 11:02:30.400
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 2 2017-03-08 11:02:30.466
+!MESSAGE An error occurred while accessing the type hierarchy of type ‘interface RequestInfoExt [in RequestInfoExt.class [in com.sun.corba.se.spi.legacy.interceptor [in /usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/rt.jar]]]’.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:786)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:409)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:358)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:345)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:321)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:312)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2017-03-08 11:02:30.466
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 2 2017-03-08 11:02:30.524
+!MESSAGE An error occurred while accessing the type hierarchy of type ‘class UnknownType [in UnknownType.class [in com.sun.corba.se.spi.legacy.interceptor [in /usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/rt.jar]]]’.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:786)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:409)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:358)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:345)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:321)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:312)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2017-03-08 11:02:30.524
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 2 2017-03-08 11:02:30.550
+!MESSAGE An error occurred while accessing the type hierarchy of type ‘class <anonymous> [in GetORBPropertiesFileAction$1.class [in javax.rmi [in /usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/rt.jar]]]’.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:786)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:409)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:358)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:345)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:321)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:312)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2017-03-08 11:02:30.550
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 2 2017-03-08 11:02:30.611
+!MESSAGE An error occurred while accessing the type hierarchy of type ‘class GetORBPropertiesFileAction [in GetORBPropertiesFileAction.class [in javax.rmi [in /usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/rt.jar]]]’.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:786)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:409)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:358)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:345)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:321)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:312)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2017-03-08 11:02:30.611
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 2 2017-03-08 11:02:30.678
+!MESSAGE An error occurred while accessing the type hierarchy of type ‘class PortableRemoteObject [in PortableRemoteObject.class [in javax.rmi [in /usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/rt.jar]]]’.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:786)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:409)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:358)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:345)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:321)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:312)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2017-03-08 11:02:30.678
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2017-03-08 11:02:31.573
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [/usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/rt.jar is not on its project's build path]
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getRawClasspathEntry(PackageFragmentRoot.java:562)
+	at org.eclipse.jdt.internal.core.JavaElement.getJavadocBaseLocation(JavaElement.java:728)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1011)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:717)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:538)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:90)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:60)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:602)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$Timer$2$1.run(AdditionalInfoController.java:113)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1006 2017-03-08 11:02:31.573
+!MESSAGE /usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/rt.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2017-03-08 11:02:54.318
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [/usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/rt.jar is not on its project's build path]
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getRawClasspathEntry(PackageFragmentRoot.java:562)
+	at org.eclipse.jdt.internal.core.JavaElement.getJavadocBaseLocation(JavaElement.java:728)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1011)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:717)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:538)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:90)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:60)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:602)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$Timer$2$1.run(AdditionalInfoController.java:113)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1006 2017-03-08 11:02:54.318
+!MESSAGE /usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/rt.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2017-03-08 11:03:02.047
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [/usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/rt.jar is not on its project's build path]
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getRawClasspathEntry(PackageFragmentRoot.java:562)
+	at org.eclipse.jdt.internal.core.JavaElement.getJavadocBaseLocation(JavaElement.java:728)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1011)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:717)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:538)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:90)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:60)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:602)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$Timer$2$1.run(AdditionalInfoController.java:113)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1006 2017-03-08 11:03:02.047
+!MESSAGE /usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/rt.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2017-03-08 11:03:04.982
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [/usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/rt.jar is not on its project's build path]
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getRawClasspathEntry(PackageFragmentRoot.java:562)
+	at org.eclipse.jdt.internal.core.JavaElement.getJavadocBaseLocation(JavaElement.java:728)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1011)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:717)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:538)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:90)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:60)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:602)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$Timer$2$1.run(AdditionalInfoController.java:113)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1006 2017-03-08 11:03:04.982
+!MESSAGE /usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/rt.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2017-03-08 11:03:05.173
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [/usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/rt.jar is not on its project's build path]
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getRawClasspathEntry(PackageFragmentRoot.java:562)
+	at org.eclipse.jdt.internal.core.JavaElement.getJavadocBaseLocation(JavaElement.java:728)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1011)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:717)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:538)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:90)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:60)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:602)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$Timer$2$1.run(AdditionalInfoController.java:113)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1006 2017-03-08 11:03:05.174
+!MESSAGE /usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/rt.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2017-03-08 11:03:28.583
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [/usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/rt.jar is not on its project's build path]
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getRawClasspathEntry(PackageFragmentRoot.java:562)
+	at org.eclipse.jdt.internal.core.JavaElement.getJavadocBaseLocation(JavaElement.java:728)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1011)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:717)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:538)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:90)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:60)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:602)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$Timer$2$1.run(AdditionalInfoController.java:113)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1006 2017-03-08 11:03:28.583
+!MESSAGE /usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/rt.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2017-03-08 11:06:33.240
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [/usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/rt.jar is not on its project's build path]
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getRawClasspathEntry(PackageFragmentRoot.java:562)
+	at org.eclipse.jdt.internal.core.JavaElement.getJavadocBaseLocation(JavaElement.java:728)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1011)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:717)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:538)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:90)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:60)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:602)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$Timer$2$1.run(AdditionalInfoController.java:113)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1006 2017-03-08 11:06:33.240
+!MESSAGE /usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/rt.jar is not on its project's build path
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2017-03-08 11:06:33.722
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [/usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/rt.jar is not on its project's build path]
+	at org.eclipse.jdt.internal.core.PackageFragmentRoot.getRawClasspathEntry(PackageFragmentRoot.java:562)
+	at org.eclipse.jdt.internal.core.JavaElement.getJavadocBaseLocation(JavaElement.java:728)
+	at org.eclipse.jdt.internal.core.BinaryType.getJavadocContents(BinaryType.java:1011)
+	at org.eclipse.jdt.internal.core.BinaryMethod.getAttachedJavadoc(BinaryMethod.java:717)
+	at org.eclipse.jdt.internal.ui.text.javadoc.JavadocContentAccess2.getHTMLContent(JavadocContentAccess2.java:538)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.extractJavadoc(ProposalInfo.java:90)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.computeInfo(ProposalInfo.java:75)
+	at org.eclipse.jdt.internal.ui.text.java.ProposalInfo.getInfo(ProposalInfo.java:60)
+	at org.eclipse.jdt.internal.ui.text.java.AbstractJavaCompletionProposal.getAdditionalProposalInfo(AbstractJavaCompletionProposal.java:602)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$Timer$2$1.run(AdditionalInfoController.java:113)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1006 2017-03-08 11:06:33.723
+!MESSAGE /usr/lib64/jvm/java-1.8.0-openjdk-1.8.0/jre/lib/rt.jar is not on its project's build path

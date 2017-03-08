@@ -1,0 +1,31 @@
+package ist.pa;
+
+public class SetCommand extends Command {
+
+	
+	
+	private String argument;
+	
+	public String getArgument() {
+		return argument;
+	}
+
+	public void setArgument(String argument) {
+		this.argument = argument;
+	}
+
+	public SetCommand(String argument) {
+		super();
+		this.argument = argument;
+	}
+
+	
+	@Override
+	public void run() {
+		
+System.out.println("running");
+		
+	}
+
+	
+}

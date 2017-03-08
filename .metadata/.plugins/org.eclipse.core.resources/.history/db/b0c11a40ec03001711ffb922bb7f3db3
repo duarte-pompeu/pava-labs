@@ -1,0 +1,6 @@
+package ist.pa;
+
+public class SetCommand extends Command {
+
+	
+}

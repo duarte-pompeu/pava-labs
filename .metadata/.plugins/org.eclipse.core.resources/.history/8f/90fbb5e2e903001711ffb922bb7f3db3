@@ -1,0 +1,53 @@
+package ist.pa;
+
+import java.util.Scanner;
+
+public class Main{
+	public static void main(String[] args){
+		
+		Scanner reader = new Scanner(System.in);
+		String userInput = "";
+		
+
+		try{
+			while(true){
+				userInput = reader.next();
+				System.out.println(userInput);
+				
+				String[] commands = userInput.split(" ");
+				
+				if(userInput.equals("Class")){
+					
+				}
+				else if (userInput.equals("Set")){
+					
+				}
+				else if (userInput.equals("Set")){
+					
+				}
+
+				else if (userInput.equals("Set")){
+					
+				}
+
+				else if (userInput.equals("Exit")){
+					break;
+				}
+
+			}
+//			Class<?> myClass = Class.forName(className);
+//			Constructor<?> constructor = myClass.getConstructor();
+//			Object object = constructor.newInstance(new Object[] { });
+//			
+//			//get method that takes a String as argument
+//			Method method = myClass.getMethod("say", null);
+//			method.invoke(object, null);
+		}
+		
+		catch(Exception e){
+			System.out.println(":(");
+		}
+		
+		reader.close();
+	}
+}

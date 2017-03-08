@@ -1,0 +1,51 @@
+package ist.pa;
+
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Method;
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class Main{
+	public static HashMap<String, Object> objectHashMap = new HashMap<String, Object>();
+	public static void main(String[] args){
+		
+		Scanner reader = new Scanner(System.in);
+		String userInput = "";
+		
+
+		String[] commands = null;
+		try{
+			while(true){
+				userInput = reader.nextLine();
+				System.out.println(userInput);
+				
+				commands = userInput.split(" ");
+				String commandStr = commands[0];
+				Command c;
+				
+				if(commandStr.equalsIgnoreCase("Exit")){
+					break;
+				}
+				
+				String argument = commands[1];
+				
+				Class<?> myClass = Class.forName("ist.pa." + commandStr + "Command");
+				Constructor<?> constructor = myClass.getConstructor(String.class);
+				Object object = constructor.newInstance(new Object[] { argument });
+				
+				//get method that takes a String as argument
+				Method method = myClass.getMethod("run", null);
+				method.invoke(object, null);
+				
+			}
+
+		}
+		
+		catch(Exception e){
+			System.out.println(e.getMessage());
+			e.printStackTrace();
+		}
+		
+		reader.close();
+	}
+}

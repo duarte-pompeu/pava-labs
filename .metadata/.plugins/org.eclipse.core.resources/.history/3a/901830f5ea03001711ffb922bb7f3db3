@@ -1,0 +1,6 @@
+package ist.pa;
+
+public class MyObject {
+	private String name;
+	private Object object;
+}

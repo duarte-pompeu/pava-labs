@@ -1,0 +1,15 @@
+package ist.pa;
+
+public class SetCommand extends Command {
+
+	@Override
+	
+	private String argument;
+	
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+}

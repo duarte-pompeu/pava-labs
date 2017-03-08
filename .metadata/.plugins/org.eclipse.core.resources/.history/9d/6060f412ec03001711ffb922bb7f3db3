@@ -1,0 +1,9 @@
+package ist.pa;
+
+public class Command {
+	
+	public abstract void run(){
+		
+	}
+
+}

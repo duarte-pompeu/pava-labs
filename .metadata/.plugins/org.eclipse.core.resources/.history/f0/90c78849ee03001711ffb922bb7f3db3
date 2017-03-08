@@ -1,0 +1,17 @@
+package ist.pa;
+
+public class ClassCommand extends Command{
+	private String argument;
+	
+	public ClassCommand(String argument) {
+		super();
+		this.argument = argument;
+	}
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

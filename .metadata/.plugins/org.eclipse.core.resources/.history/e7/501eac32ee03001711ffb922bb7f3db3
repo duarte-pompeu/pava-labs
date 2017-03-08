@@ -1,0 +1,5 @@
+package ist.pa;
+
+public class ClassCommand extends Command{
+
+}
