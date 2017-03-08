@@ -27,27 +27,33 @@ public class Main{
 					break;
 				}
 				
-				String argument = commands[1];
-				
 				// get Command object
-				Class<?> myClass = Class.forName("ist.pa." + commandStr + "Command");
-				Constructor<?> constructor = myClass.getConstructor(String.class);
-				Object object = constructor.newInstance(new Object[] { argument });
+				Class<?> myClass;
+				try {
+					myClass = Class.forName("ist.pa." + commandStr + "Command");
+					Constructor<?> constructor = myClass.getConstructor(String.class);
+					String argument = commands[1];
+					Object object = constructor.newInstance(new Object[] { argument });
+					
+					Method method = myClass.getMethod("run", null);
+					method.invoke(object, null);
+					System.out.println(lastObject);
+				} 
+				catch (ClassNotFoundException e) {
+					System.out.println("Class not found.");
+					String invokeCommand = commandStr;
+					Method method = lastObject.getClass().getMethod(commandStr, null);
+					Object result = method.invoke(lastObject, null);
+					
+					if(result != null){
+						System.out.println(result);
+					}
+				}
 				
-				//get method that takes a String as argument
-				Method method = myClass.getMethod("run", null);
-				method.invoke(object, null);
-				
-				System.out.println(lastObject);
 			}
-
 		}
-		
 		catch(Exception e){
-			System.out.println(e.getMessage());
 			e.printStackTrace();
 		}
-		
-		reader.close();
 	}
 }
