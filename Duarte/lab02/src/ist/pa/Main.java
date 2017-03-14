@@ -59,21 +59,23 @@ public class Main{
 					
 					else if(commands.length > 1){
 						// has args
-						Method[] methods = c.getDeclaredMethods();
-						ArrayList<Method> matchedMethods = new ArrayList<Method>();
-						for(Method m: methods){
-							if(m.getName().equals(commandStr)){
-								matchedMethods.add(m);
-								System.out.println(m);
-							}
-						}
-						
-						Class[] classes = { Double.class, Integer.class, String.class };
-						int a = Integer.valueOf(commands[1]);
-						
+						ArrayList<Method> matchedMethods = getMatchingMethods(c, commands[0]);
 						
 						if( matchedMethods.size() == 0){
-							System.out.println("Error: no method found!");
+							throw new RuntimeException("Error: no method found!");
+						}
+						else{
+							String param1 = commands[1];
+							Object o = tryCast(param1);
+							
+							for(Method m: matchedMethods){
+								try{
+									Object result = m.invoke(lastObject, o);
+									System.out.println(result);
+									break;
+								}
+								catch (Exception e) {}
+							}
 						}
 					}
 				}
@@ -86,5 +88,31 @@ public class Main{
 				System.out.println("Error: " + e + ": " + e.getCause());
 			}
 		}
+	}
+
+	static public Object tryCast(String stringObject) throws RuntimeException {
+		Class[] classes = { Double.class, Integer.class, String.class };
+		for(int i = 0; i < classes.length; i++){
+			try{
+				Class aClass = classes[i];
+				Object o = aClass.cast(stringObject);
+				return o;
+			}
+			catch (Exception e){
+			}
+		}
+		throw new RuntimeException("Couldn't cast that!");
+	}
+	
+	static public ArrayList<Method> getMatchingMethods(Class c, String methodName){
+		Method [] methods = c.getDeclaredMethods();
+		ArrayList<Method> matchedMethods = new ArrayList<Method>();
+		for(Method m: methods){
+			if(m.getName().equals(methodName)){
+				matchedMethods.add(m);
+				//~ System.out.println(m);
+			}
+		}
+		return matchedMethods;
 	}
 }
