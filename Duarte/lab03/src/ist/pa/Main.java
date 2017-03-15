@@ -2,6 +2,7 @@ package ist.pa;
 
 import java.lang.reflect.*;
 import java.lang.annotation.*;
+import java.util.*;
 
 public class Main{
 	public static void main(String[] args) throws Exception{
@@ -12,8 +13,8 @@ public class Main{
 			
 			if(m.isAnnotationPresent(Test.class)){
 				try{
-					Test a = m.getAnnotation(Class.forName("ist.pa.HelloWorld"));
-					runSetup(Class.forName("ist.pa.HelloWorld"), "");
+					String name = m.getAnnotation(Test.class).value();
+					runSetup(Class.forName("ist.pa.HelloWorld"), name);
 					m.invoke(null);
 					passed++;
 					System.out.println("PASS: " + m);
@@ -30,16 +31,20 @@ public class Main{
 	public static void runSetup(Class c, String name) throws Exception{
 		for (Method m: Class.forName("ist.pa.HelloWorld").getMethods()){
 			
-			if(! m.isAnnotationPresent(Setup.class)){
+			// continue if not setup
+			Annotation a = m.getAnnotation(Setup.class);
+			if(a == null){
 				continue;
 			}
 			
-			Annotation[] annotations = m.getDeclaredAnnotations();
-			for(Annotation a: annotations){
-				if (a.annotationType().equals(Setup.class)){
-					if(a.equals(name)){
-						m.invoke(null);
-					}
+			
+			String[] values = name.split(",");
+			for(String v: values){
+				if(v.equals("*")){
+					m.invoke(null);
+				}
+				else if (m.getAnnotation(Setup.class).value().equals(v)){
+					m.invoke(null);
 				}
 			}
 		}
