@@ -7,14 +7,25 @@ import java.util.*;
 public class Main{
 	public static void main(String[] args) throws Exception{
 		
+		String [] classNames = {"ist.pa.SimpleTest", 
+			"ist.pa.SetupTest", "ist.pa.ExtendedTest"};
+			
+		Class myClass = Class.forName(classNames[2]);
+		Method[] methods = null;
+		if(myClass != ExtendedTest.class){
+			methods = myClass.getMethods();
+		}
+		else {
+			methods = myClass.getSuperclass().getMethods();
+		}
+		
 		int passed = 0; int failed = 0;
-		for (Method m: Class.forName("ist.pa.HelloWorld").getMethods()){
-			//~ System.out.println(m);
+		for (Method m: methods){
 			
 			if(m.isAnnotationPresent(Test.class)){
 				try{
 					String name = m.getAnnotation(Test.class).value();
-					runSetup(Class.forName("ist.pa.HelloWorld"), name);
+					runSetup(myClass, name);
 					m.invoke(null);
 					passed++;
 					System.out.println("PASS: " + m);
@@ -28,15 +39,14 @@ public class Main{
 		System.out.printf("Passed: %d, Failed: %d%n", passed, failed);
 	}
 	
-	public static void runSetup(Class c, String name) throws Exception{
-		for (Method m: Class.forName("ist.pa.HelloWorld").getMethods()){
+	public static void runSetup(Class myClass, String name) throws Exception{
+		for (Method m: myClass.getMethods()){
 			
 			// continue if not setup
 			Annotation a = m.getAnnotation(Setup.class);
 			if(a == null){
 				continue;
 			}
-			
 			
 			String[] values = name.split(",");
 			for(String v: values){

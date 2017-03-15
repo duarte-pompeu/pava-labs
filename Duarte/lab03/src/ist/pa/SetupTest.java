@@ -1,19 +1,15 @@
 package ist.pa;
 
-public class HelloWorld{
+public class SetupTest{
 	
-	@Test
-	public static void m1() {}
-	@Test("1")
-	public static void m2() {}
-	@Test("1,2")
-	public static void m3() {}
 	@Test("1")
 	public static void m4() {}
-	@Test
+	@Test("2")
 	public static void m5() {}
-	@Test
-	public static void m6() { throw new RuntimeException(); }
+	@Test("1,2")
+	public static void m6() {  }
+	@Test("*")
+	public static void m7() { }
 	
 	@Setup("1")
 	public static void s1() {System.out.println("s1");}
