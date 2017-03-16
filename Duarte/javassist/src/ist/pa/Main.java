@@ -12,7 +12,7 @@ public class Main{
 		
 		CtMethod ctMethod = ctClass.getDeclaredMethod("function");
 		String name = ctMethod.getName();
-		ctMethod.setName(name + "$original"));
+		ctMethod.setName(name + "$original");
 		ctMethod = CtNewMethod.copy(ctMethod, name, ctClass, null);
 		ctMethod.insertAfter("{System.out.println(\"Goodbye\");}"
 			);
