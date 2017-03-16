@@ -1,0 +1,24 @@
+<project name="lab02" default="init" basedir=".">
+
+	<path id="project.class.path">
+  		<pathelement location="bin/classes/"/>
+	</path>
+
+	<target name="init">
+		<mkdir dir="bin/classes"/>
+	</target>
+	
+	<target name="clean">
+		<delete dir="bin/classes"/>
+	</target>
+	
+	<target name="compile">
+		<javac srcdir="src" destdir="bin/classes" includeantruntime="false"/>
+	</target>
+	
+	<target name="run">
+		<java classname="pt.ist.ap.labs.Shell" classpathref="project.class.path"/>
+	</target>
+	
+</project>
+
