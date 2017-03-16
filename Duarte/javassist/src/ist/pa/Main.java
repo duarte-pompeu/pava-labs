@@ -14,12 +14,12 @@ public class Main{
 		String name = ctMethod.getName();
 		ctMethod.setName(name + "$original");
 		ctMethod = CtNewMethod.copy(ctMethod, name, ctClass, null);
-		ctMethod.insertAfter("{System.out.println(\"Goodbye\");}"
+		ctMethod.setBody("{System.out.println(\"Goodbye\");}"
 			);
 		ctClass.addMethod(ctMethod);
 		
 		ctClass.writeFile();
-		//~ Main.class.getMethod("function").invoke(null);
+		Main.class.getMethod("function").invoke(null);
 		for(Method m: Main.class.getMethods()){
 			if(m.getName().equals("function")){
 				m.invoke(null);
