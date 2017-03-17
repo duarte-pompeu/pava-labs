@@ -6,9 +6,8 @@ import java.lang.reflect.*;
 
 public class Main{
 	
-	
 	public static void main(String[] args) throws Exception{
-
+		javassistPoint();
 	}
 	
 	public static void javassistTest() throws Exception{
@@ -39,5 +38,20 @@ public class Main{
 			}
 		}
 		Test.function();
+	}
+	
+	public static void javassistPoint() throws Exception{
+		Class originalClass = Point.class;
+		String funcName = "move";	
+		
+		ClassPool cp = ClassPool.getDefault();
+		cp.insertClassPath(new ClassClassPath(originalClass));
+		
+        CtClass cc = cp.get(originalClass.getCanonicalName());
+        CtMethod m = cc.getDeclaredMethod(funcName);
+        m.insertBefore("{ System.out.println(\"Hello.\"); }");
+        Class c = cc.toClass();
+        Point p = (Point)c.newInstance();
+        p.move(1,2);
 	}
 }
