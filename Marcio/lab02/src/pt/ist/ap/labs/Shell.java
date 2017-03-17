@@ -14,7 +14,8 @@ public class Shell {
 	public static Map<String, Object> map = new HashMap<String, Object>();
 	public static Object lastObject = null;
 	
-	protected static Map<String, Class<?>> typeMatch = new HashMap<String, Class<?>>();
+	protected static Map<String, Class<?>> primitiveTypes = new HashMap<String, Class<?>>();
+	
 	
 	public static void main(String[] args) throws IOException {
 		
@@ -25,13 +26,13 @@ public class Shell {
 		else {
 			System.out.println("Welcome!");
 			
-			final String prompt = "Command:> ";
+			// final String prompt = "Command:> ";
 			Scanner reader = new Scanner(System.in);
 			String input = "";
 			String[] tokens;
 			String command = "";
 			
-			initTypeMatch();
+			setPrimitiveTypes();
 			
 			while(true) {
 				// System.out.print(prompt);
@@ -77,6 +78,7 @@ public class Shell {
 		}
 	}
 
+	
 	private static void tryGenericCommand(String input) {
 		
 		System.out.println("Trying generic command: " + input);
@@ -84,94 +86,120 @@ public class Shell {
 		Object obj = Shell.lastObject;
 		Class<?> cls = obj.getClass();
 		
-		// get method name and type of parameters (odd indexes)
+		// get method name
 		String[] tokens = input.split(" ");
 		String command = tokens[0];
 	
+		// get type of parameters (odd indexes)
 		List<Class<?>> typeList = new ArrayList<Class<?>>();
 		
-		for(int i=1; i < tokens.length; i+=2) {
+		for(int i = 1; i < tokens.length; i += 2) {
+			
 			try {
-				System.out.println("Found class " + Class.forName(tokens[i])); //TODO erase
-				typeList.add(Class.forName(tokens[i]));
+				if(Shell.primitiveTypes.containsKey(tokens[i]))
+					typeList.add(Shell.primitiveTypes.get(tokens[i]));
+				else
+					typeList.add(Class.forName(tokens[i]));
 				
 			} catch (ClassNotFoundException e) {
+				
 				System.out.println("Invalid type!");
 				return;
 			}
 		}
 		
+		// TODO erase
+		for(Class<?> c : typeList)
+			System.out.println("Class: " + c);
+		
 		// search for method with the desired signature
-		Method method;
+		Method method = null;
+		Class<?>[] types = new Class<?>[typeList.size()];
+		typeList.toArray(types);
+		
 		try {
-			Class<?>[] types = new Class<?>[typeList.size()];
-			typeList.toArray(types);
 			
-			for(int i=0; i<types.length;i++) {
-				if(Shell.typeMatch.containsKey(types[i].getSimpleName()))
-					types[i] = Shell.typeMatch.get(types[i].getSimpleName());
-				System.out.println(types[i]); //TODO erase
-			}
-			method = cls.getMethod(command, (typeList.size() == 0) ? null : typeList.toArray(types));
+			method = cls.getMethod(command, (typeList.size() == 0) ? null : types);
 			System.out.println("Method: " + method);
 			
-			// get parameters - only strings, for now
-			List<Object> paramList = new ArrayList<Object>();
-			
-			for(int i=2; i < tokens.length; i+=2) {
-				paramList.add(tokens[i]);
-			}
-			Object[] params = new Object[paramList.size()];
-			paramList.toArray(params);
-			
-			//invoke with parameters
-			method.invoke(obj, (paramList.size() == 0) ? null : paramList.toArray(params));
-			
 		} catch (NoSuchMethodException e) {
+			
 			System.out.println("Please, insert a valid command...");
 			return;
 			
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
-			
+			e.printStackTrace();	
 		}
+		
+		// get parameters (even indexes)
+		List<String> paramList = new ArrayList<String>();
+		
+		for(int i=2; i < tokens.length; i+=2) {
+			paramList.add(tokens[i]);
+		}
+		
+		Object[] params = new Object[paramList.size()];
+		paramList.toArray(params);
+		
+		// match type with argument - ONLY FOR ONE int ARGUMENT
+		if(typeList.size() > 0 && types[0] == int.class)
+			params[0] = (Object) Integer.parseInt(paramList.get(0));
+		
+		//invoke with parameters
+//		try {
+//			method.invoke(obj, (paramList.size() == 0) ? null : params);
+//			
+//		} catch (Exception e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
 	}
 
-	private static void initTypeMatch() {
+	
+	private static void setPrimitiveTypes() {
 		
-		Map<String, Class<?>> map = Shell.typeMatch;
+		Map<String, Class<?>> map = Shell.primitiveTypes;
 		
-		map.put("Integer", int.class);
-		map.put("Double", double.class);
-		map.put("Float", float.class);
-		map.put("Boolean", boolean.class);
+		map.put("int", int.class);
+		map.put("double", double.class);
+		map.put("float", float.class);
+		map.put("boolean", boolean.class);
 		map.put("String", String.class);
 	}
+	
 	
 	static Map<String, Object> getMap() {
 		
 		return map;
 	}
 
+	
 	static void addObject(String name, Object obj) {
 		
 		map.put(name, obj);
 	}
+	
 	
 	static Object getObject(String name) {
 		
 		return map.get(name);
 	}
 
+	
 	static Object getLastObject() {
 		
 		return lastObject;
 	}
 
+	
 	static void setLastObject(Object obj) {
 		
 		lastObject = obj;
 	}
 }
+
+
+
+
 
