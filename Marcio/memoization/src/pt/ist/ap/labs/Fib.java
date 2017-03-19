@@ -1,6 +1,6 @@
 package pt.ist.ap.labs;
 
-
+import pt.ist.ap.labs.Memoize;
 
 
 public class Fib {
@@ -17,7 +17,7 @@ public class Fib {
 		}
 	}
 	
-	
+	@Memoize
 	public static Long fib(Long n) {
 		
 		if(n < 2)

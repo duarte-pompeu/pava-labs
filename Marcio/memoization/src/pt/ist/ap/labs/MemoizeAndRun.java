@@ -36,6 +36,7 @@ public class MemoizeAndRun {
 		ctMethod.setBody("{" +
 						 "  Object result = cachedResults.get($1);" + 
 						 "  if(result == null) {" +
+						 "  System.out.println(\"Not in cache!\"); " + 
 						 "    result = " + name + "$original($$);" +
 						 "    cachedResults.put($1, result);" + 
 						 "  }" +
