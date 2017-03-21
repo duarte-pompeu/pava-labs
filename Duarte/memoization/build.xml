@@ -1,0 +1,27 @@
+<project name="memoization" default="init" basedir=".">
+
+	<path id="project.class.path">
+  		<pathelement location="bin/classes/"/>
+  		<pathelement location="../lib/javassist.jar"/>
+	</path>
+
+	<target name="init">
+		<mkdir dir="bin/classes"/>
+	</target>
+	
+	<target name="clean">
+		<delete dir="bin/classes"/>
+	</target>
+	
+	<target name="compile">
+		<javac srcdir="src" destdir="bin/classes" includeantruntime="false" classpathref="project.class.path"/>
+	</target>
+	
+	<target name="run">
+		<java classname="pt.ist.ap.labs.MemoizeAndRun" classpathref="project.class.path">
+		<arg line="${args}"/>
+		</java>
+	</target>
+	
+</project>
+
